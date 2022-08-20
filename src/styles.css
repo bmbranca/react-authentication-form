@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+body {
+  background: #eaeaea;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  width: 360px;
+  background-color: white;
+  border-radius: 10px;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 1em;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1em;
+}
+
+.success-message {
+  font-family: "Open Sans", sans-serif;
+  background-color: #3f89f8;
+  padding: 1em;
+  color: white;
+  border-radius: 10px;
+}
+
+.form-field {
+  margin: 1em 0 1em 0;
+  padding: 1em;
+  font-size: 1rem;
+  border: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: red;
+  margin-bottom: 1em;
+}
+
+input {
+  background: #f2f2f2;
+  border-radius: 10px;
+}
+
+.error {
+  border-style: solid;
+  border: 2px solid #ffa4a4;
+}
+
+button {
+  background: #000000;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+button:disabled {
+  cursor: default;
+}

@@ -1,6 +1,5 @@
 import React, { useState, createContext } from "react";
 import "./styles.css";
-import Nav from "./Nav";
 export const ThemeContext = createContext();
 
 export default function App() {
@@ -12,7 +11,6 @@ export default function App() {
 
   const [submitted, setSubmitted] = useState(false);
   const [valid, setValid] = useState(false);
-  const [theme, setTheme] = useState("light");
 
   const handleFirstNameInputChange = (event) => {
     setValues({
@@ -44,13 +42,8 @@ export default function App() {
   };
 
   return (
-    <ThemeContext.Provider value={{ theme, setTheme }}>
-      <Nav />
-      <div
-        class={
-          theme === "light" ? "form-container-light" : "form-container-dark"
-        }
-      >
+    <>
+      <div className="form-container">
         <form class="register-form" onSubmit={handleSubmit}>
           {submitted && valid ? (
             <div class="success-message">
@@ -98,6 +91,6 @@ export default function App() {
           </button>
         </form>
       </div>
-    </ThemeContext.Provider>
+    </>
   );
 }
